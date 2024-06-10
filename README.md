@@ -1,59 +1,41 @@
-# Stylometry Approach for Detecting Writing Style Patterns and Changes in Poetry text
+# Stylometry Approach for Detecting Writing Style Patterns and Changes in Poetry Text
 
-
-### Objective
 This project analyzes the stylistic changes in the poetry of Maya Angelou across different periods of her career using unsupervised learning and natural language processing techniques. The focus is on extracting and comparing stylistic topic modeling to understand the evolution of her writing style.
 
-Each poetry is analyzed by the following features using NLTK tools, roBERTa and pretrained huggingface transformers and Gensim topic modelling.
+## Tech Stack 💻
+[![My Skills](https://skillicons.dev/icons?i=py, )](https://skillicons.dev)
 
-- Basic Text Features: Document length, Mean Sentence Length, Mean Word Length, Readability
-- Lexical Usage: Lexical richness, Function word frequencies, Content word frequencies
-- Semantic Analysis: Semantic repetition
-- Punctuation Usage
-- Sentiment Analysis: Sentiment polarity (negative, neutral, and positive), Sentiment strength
-
-Writing style patterns are detected with unsupervised learning using KNN and PCA reduction.
+- Python: Core programming language used for the project.
+- NLTK: Used for text preprocessing and feature extraction.
+- roBERTa and Huggingface Transformers: Employed for semantic analysis and sentiment detection.
+- Gensim: Utilized for topic modeling and analysis.
 
 
+## Features 🏆
 
-### RUN ME
-To run this project, you will need to install the required Python libraries. You can install them using the following command:
-
-pip install -r requirements.txt
-
-
-### Project Structure
-- `DataProcessor.py`: Contains functions for data preprocessing and feature extraction.
-- `TextModeler.py`: Includes methods for text modeling and analysis.
-- `Stylometry.py`: Tools for performing stylometric analysis.
-- `Visualizer.py`: Provides visualization functions for the analysis results.
-- `SemanticRepetitionDetector.py`: Detects semantic repetitions using BERT model
+- Basic Text Features: Analyzes document length, mean sentence length, mean word length, and readability.
+- Lexical Usage: Examines lexical richness, function word frequencies, and content word frequencies.
+- Semantic Analysis: Detects semantic repetition and performs sentiment analysis (polarity and strength).
+- Punctuation Usage: Analyzes the use of punctuation in the text.
+- Writing Style Patterns: Uses unsupervised learning techniques (KNN and PCA) to detect writing style patterns.
 
 
-### Extracting the Project
+## Deployment 🌐
+- Local Environment
 
-After downloading the NLP_project.zip file, extract it to your desired location.
-
-## Running the Analysis
-
-1. Navigate to the `NLP_project` folder.
-2. Ensure that the folders `initial state` and `final state` are present within the `Maya Angelou` folder.
-3. Run the main script file using Python. Ensure you have all the required dependencies installed.
-
-### Notes
-- The script uses relative paths to access the corpus data. It expects the corpus folders to be in the `Maya Angelou` directory within the root project directory.
-- If you encounter any path errors, please check that the folder structure matches the expected format and that the script is executed from the root project directory.
+- Visual Studio Code
 
 
-### IMPORTANT NOTE
-
-The function def _semantic_repetition(self,text) in the class DataProcessor
-will run some +5 minutes since it runs a BERT model which for each poem checks for semantic repetition.
+## Usage 🎯
+- Open your terminal and run the following command: git clone https://github.com/danieladam7/writing-patterns-and-changing-detection
+- cd https://github.com/danieladam7/writing-patterns-and-changing-detection
+- pip install -r requirements.txt
+- python main.py
 
 
 
-Daniel Adam, I.D. 342475639
-B.Sc. in Computer Science with specification in Data Science
-Topics in Natural Language Processing
-Ben Gurion University of the Negev
+## Connect me 📫
+[![text](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daniel-adam-backend-developer/)
+[![Website](https://img.shields.io/badge/Website-grey?style=for-the-badge&url=https%3A%2F%2FMyWebsite)](https://danieladam.click/)
+[![text](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:danielyosef.adam@gmail.com)
 
